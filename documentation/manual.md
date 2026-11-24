@@ -84,7 +84,7 @@ See Common workflows for a systemd timer example.
 ## Configuration file
 
 **Location:** `~/.config/debherder/config.env` (respects `XDG_CONFIG_HOME`).  
-Override with `PKG_UPDATER_CONFIG=/path/to/file`, or `--config <path>` on the  
+Override with `DEBHERDER_CONFIG=/path/to/file`, or `--config <path>` on the  
 command line.
 
 **Format:** bash — the file is `source`d.
@@ -251,7 +251,7 @@ Checksum sources, tried in order:
 
 |Variable|Default|
 |---|---|
-|`PKG_UPDATER_CONFIG`|`${XDG_CONFIG_HOME:-$HOME/.config}/debherder/config.env`|
+|`DEBHERDER_CONFIG`|`${XDG_CONFIG_HOME:-$HOME/.config}/debherder/config.env`|
 |`REPOS_FILE`|`${XDG_CONFIG_HOME:-$HOME/.config}/debherder/repos.list`|
 |`XDG_STATE_HOME`|`$HOME/.local/state` (standard XDG)|
 
@@ -416,8 +416,8 @@ Called immediately before each installer invocation.
 
 ```text
 # /etc/sudoers.d/debherder
-Cmnd_Alias PKG_UPDATER = /usr/bin/apt-get, /usr/bin/dpkg
-youruser ALL=(root) NOPASSWD: PKG_UPDATER
+Cmnd_Alias DEBHERDER = /usr/bin/apt-get, /usr/bin/dpkg
+youruser ALL=(root) NOPASSWD: DEBHERDER
 ```
 
 Validate with `visudo -cf /etc/sudoers.d/debherder`.

@@ -75,8 +75,8 @@ For unattended runs (cron, systemd timer):
 
 ```text
 # /etc/sudoers.d/debherder  (validate: visudo -cf …)
-Cmnd_Alias PKG_UPDATER = /usr/bin/apt-get, /usr/bin/dpkg
-youruser ALL=(root) NOPASSWD: PKG_UPDATER
+Cmnd_Alias DEBHERDER = /usr/bin/apt-get, /usr/bin/dpkg
+youruser ALL=(root) NOPASSWD: DEBHERDER
 ```
 
 ## Cache

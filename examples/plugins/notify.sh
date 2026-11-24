@@ -4,7 +4,7 @@
 #
 # Install:
 #   chmod +x notify.sh
-#   cp notify.sh ~/.local/state/pkg-updater/plugins.d/
+#   cp notify.sh ~/.local/state/debherder/plugins.d/
 #
 # Requires notify-send (libnotify-bin on Debian/Ubuntu).
 

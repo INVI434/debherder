@@ -17,7 +17,7 @@ SCRIPT_VERSION="2.7.2"
 # ---------------------------------------------------------------------------
 # Paths
 # ---------------------------------------------------------------------------
-CONFIG_FILE="${PKG_UPDATER_CONFIG:-${XDG_CONFIG_HOME:-$HOME/.config}/debherder/config.env}"
+CONFIG_FILE="${DEBHERDER_CONFIG:-${XDG_CONFIG_HOME:-$HOME/.config}/debherder/config.env}"
 STATE_DIR="${XDG_STATE_HOME:-$HOME/.local/state}/debherder"
 STATE_FILE="$STATE_DIR/installed_versions.tsv"
 LOG_FILE="$STATE_DIR/updater.log"

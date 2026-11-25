@@ -64,7 +64,7 @@ REQUIRE_CHECKSUM=true
 ```
 
 Full variable list:  
-[`documentation/manual.md`](https://github.com/INVI434/debherder/blob/main/documentation/manual.md#configuration-variables).
+[Configuration variables](documentation/manual.md#configuration-variables)
 
 ## Sudo
 
@@ -95,15 +95,15 @@ Both live under `~/.local/state/debherder/cache/`. A soft limit
 Executable scripts in `~/.local/state/debherder/plugins.d/*.sh` are invoked  
 with `<hook> <repo_slug> <version> <status>` at `pre_install`, `post_install`,  
 and `dry_run`. See the  
-[manual](https://github.com/INVI434/debherder/blob/main/documentation/manual.md#plugin-system) and  
-[`examples/plugins/notify.sh`](https://github.com/INVI434/debherder/blob/main/examples/plugins/notify.sh).
+[manual](documentation/manual.md#plugin-system) and  
+[`examples/plugins/notify.sh`](examples/plugins/notify.sh).
 
 ## Documentation
 
 Full reference, configuration tables, workflows, and troubleshooting:
 
-**[`documentation/manual.md`](https://github.com/INVI434/debherder/blob/main/documentation/manual.md)**
+**[`documentation/manual.md`](documentation/manual.md)**
 
 ## License
 
-MIT. See [`LICENSE`](https://github.com/INVI434/debherder/blob/main/LICENSE).
+MIT. See [`LICENSE`](LICENSE).
